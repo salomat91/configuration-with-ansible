@@ -1,0 +1,9 @@
+---
+- name: Test Playbook
+  hosts: all
+  become_method: sudo
+  connection: ssh
+  ignore_errors: false
+  tasks:
+    - name: Task Name Here
+      ping:
